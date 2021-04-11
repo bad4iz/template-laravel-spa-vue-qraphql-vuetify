@@ -15,12 +15,12 @@ import { InMemoryCache } from 'apollo-cache-inmemory'
 
 import vuetify from './plugins/vuetify'
 import store from './store';
-import configPlugin from './plugins/configEnv';
+import configPlugin, {configEnv} from './plugins/configEnv';
 
 // HTTP connection to the API
 const httpLink = createHttpLink({
     // You should use an absolute URL here
-    uri: 'http://larave-template-vue-qraphql/graphql',
+    uri: configEnv.appUrlGraphql,
 })
 
 // Cache implementation
@@ -37,6 +37,10 @@ const apolloProvider = new VueApollo({
 })
 
 Vue.use(configPlugin);
+
+
+console.log(configEnv)
+
 
 const app = new Vue({
     router,

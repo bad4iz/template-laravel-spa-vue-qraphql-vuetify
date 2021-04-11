@@ -23,7 +23,7 @@
       </v-list>
     </v-toolbar>
 
-      
+
 
     <v-toolbar flat class="transparent">
       <h2>{{$appConfig.titleApp}}</h2>
