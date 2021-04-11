@@ -869,6 +869,13 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
+"@pp-spaces/laravel-mix-graphql@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@pp-spaces/laravel-mix-graphql/-/laravel-mix-graphql-0.0.3.tgz#5df48d04199e05020f831f6603f6391dfaeca9fe"
+  integrity sha512-JXHO/MZMCM+NedE7MH3ar4rZ8xWjm+oZ2d2uBuTKACor/OAAT/8/0hZCCJ1NHWxPqaQ8eLi8ed7nh8qSbg1x6g==
+  dependencies:
+    graphql-tag "^2.10.3"
+
 "@types/babel__core@^7.1.12":
   version "7.1.14"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.14.tgz#faaeefc4185ec71c389f4501ee5ec84b170cc402"
@@ -3235,7 +3242,7 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0,
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
 
-graphql-tag@^2.11.0:
+graphql-tag@^2.10.3, graphql-tag@^2.11.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.11.0.tgz#1deb53a01c46a7eb401d6cb59dec86fa1cccbffd"
   integrity sha512-VmsD5pJqWJnQZMUeRwrDhfgoyqcfwEkvtpANqcoUG8/tOLkwNgU9mzub/Mc78OJMhHjx7gfAMTxzdG43VGg3bA==

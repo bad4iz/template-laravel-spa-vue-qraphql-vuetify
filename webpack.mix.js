@@ -1,4 +1,10 @@
 const mix = require('laravel-mix');
+const path = require('path');
+
+/**
+ * Import laravel-mix-graphql
+ */
+require("@pp-spaces/laravel-mix-graphql");
 
 /*
  |--------------------------------------------------------------------------
@@ -10,8 +16,13 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+mix.alias({
+    '@': path.join(__dirname, 'resources/js')
+});
 
-mix.js('resources/js/app.js', 'public/js').vue()
+mix.js('resources/js/app.js', 'public/js')
+    .vue()
     .postCss('resources/css/app.css', 'public/css', [
         //
-    ]);
+    ])
+    .graphql()

@@ -11,6 +11,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@pp-spaces/laravel-mix-graphql": "^0.0.3",
         "axios": "^0.21",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
